@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RJ INFOSYSTEM — DATA AT YOUR FINGERTIPS Document Scanning Services</title>
+  <meta name="description" content="Fast, secure and affordable document scanning, OCR and digital archiving services.">
+  <!-- Tailwind via CDN for quick styling (works for prototype) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--brand:#0ea5a4}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    .container{max-width:1100px;margin-inline:auto;padding-inline:1rem}
+    /* small gallery styles */
+    .grid-gallery img{width:100%;height:200px;object-fit:cover;border-radius:0.5rem}
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header / Nav -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="container flex items-center justify-between py-4">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center text-white font-bold">MS</div>
+        <div>
+          <h1 class="text-lg font-semibold">RJ INFOSYSTEM</h1>
+          <p class="text-sm text-gray-500">Document scanning • OCR • Digital archiving</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#services" class="hover:text-teal-600">Services</a>
+        <a href="#industries" class="hover:text-teal-600">Industries</a>
+        <a href="#gallery" class="hover:text-teal-600">Gallery</a>
+        <a href="#about" class="hover:text-teal-600">About</a>
+        <a href="#contact" class="px-4 py-2 bg-teal-500 text-white rounded-md shadow-sm">Contact</a>
+      </nav>
+
+      <button id="mobile-toggle" class="md:hidden p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+      <div class="flex flex-col p-4 gap-2">
+        <a href="#services" class="py-2">Services</a>
+        <a href="#industries" class="py-2">Industries</a>
+        <a href="#gallery" class="py-2">Gallery</a>
+        <a href="#about" class="py-2">About</a>
+        <a href="#contact" class="py-2 bg-teal-500 text-white rounded-md text-center">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="bg-gradient-to-br from-white to-gray-50 py-12">
+      <div class="container grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">Turn paper into searchable digital files — fast & secure.</h2>
+          <p class="mt-4 text-gray-600">MERA Scanner provides high-volume document scanning, OCR, indexing and secure digital delivery for businesses, schools, hospitals and legal firms.</p>
+
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700">
+            <li>• Bulk & single-file scanning</li>
+            <li>• OCR & editable PDFs</li>
+            <li>• Indexing & folder structuring</li>
+            <li>• Secure cloud & local delivery</li>
+          </ul>
+
+          <div class="mt-6 flex gap-3">
+            <a href="#contact" class="px-5 py-3 bg-teal-600 text-white rounded-md shadow">Request Quote</a>
+            <a href="#services" class="px-5 py-3 border border-gray-200 rounded-md">See Services</a>
+          </div>
+
+          <div class="mt-6 text-xs text-gray-500">Open: Mon–Sat • Walk-ins welcome • Bulk pickup available</div>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-sm">
+          <img src="https://images.unsplash.com/photo-1581091870622-3b2d5b8f0f7f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="scanning" class="w-full h-72 object-cover rounded-md">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-12">
+      <div class="container">
+        <h3 class="text-2xl font-bold">Our Services</h3>
+        <p class="text-gray-600 mt-2">Everything you need to convert, organize and protect paper records.</p>
+
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-5 rounded-lg shadow-sm">
+            <h4 class="font-semibold">High-volume Scanning</h4>
+            <p class="text-sm text-gray-600 mt-2">A3 / A4, duplex, color and black & white. Up to 300 ppm (sample rates).</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-lg shadow-sm">
+            <h4 class="font-semibold">OCR & Editable PDFs</h4>
+            <p class="text-sm text-gray-600 mt-2">Searchable text, PDF/A export, language support and accuracy tuning.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-lg shadow-sm">
+            <h4 class="font-semibold">Indexing & Metadata</h4>
+            <p class="text-sm text-gray-600 mt-2">Custom metadata, CSV export, barcode recognition and folder structures.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-lg shadow-sm">
+            <h4 class="font-semibold">Secure Delivery</h4>
+            <p class="text-sm text-gray-600 mt-2">Encrypted cloud upload, USB/hard-drive handover, or SFTP transfer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section id="industries" class="py-12 bg-white border-t">
+      <div class="container">
+        <h3 class="text-2xl font-bold">Industries We Serve</h3>
+        <div class="mt-4 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="p-4 rounded-lg border text-sm">Legal & Law Firms</div>
+          <div class="p-4 rounded-lg border text-sm">Healthcare & Hospitals</div>
+          <div class="p-4 rounded-lg border text-sm">Education & Schools</div>
+          <div class="p-4 rounded-lg border text-sm">Corporate Records</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-12">
+      <div class="container">
+        <h3 class="text-2xl font-bold">Gallery</h3>
+        <p class="text-gray-600 mt-2">Photos of our workspace and sample scans.</p>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 grid-gallery">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="scanner">
+          <img src="https://images.unsplash.com/photo-1526378722011-9a9f93b6f3b2?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="desk">
+          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="documents">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop&s=placeholder" alt="output">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 bg-white">
+      <div class="container grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold">About MERA Scanner</h3>
+          <p class="text-gray-600 mt-2">We help organisations reduce storage costs and improve information access by converting paper records into searchable digital files. Our team uses professional high-speed scanners and follows strict confidentiality processes.</p>
+
+          <ul class="mt-4 text-sm text-gray-700">
+            <li>• Secure chain-of-custody for sensitive documents</li>
+            <li>• Quality checks and human verification</li>
+            <li>• Flexible delivery (cloud, drive, or onsite)</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1200&auto=format&fit=crop&s=placeholder" alt="team" class="w-full rounded-lg shadow-sm h-64 object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12">
+      <div class="container">
+        <h3 class="text-2xl font-bold">Contact Us</h3>
+        <p class="text-gray-600 mt-2">Request a quote, ask questions, or schedule a pickup.</p>
+
+        <div class="mt-6 grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h4 class="font-semibold">Visit or Call</h4>
+            <p class="text-sm text-gray-700 mt-2">Shop address: 123 Main Road, Your City, State</p>
+            <p class="text-sm text-gray-700">Phone / WhatsApp: +91 98765 43210</p>
+            <p class="text-sm text-gray-700">Email: hello@merascanner.com</p>
+
+            <div class="mt-4">
+              <h5 class="font-medium">Business Hours</h5>
+              <p class="text-sm text-gray-600">Mon–Sat: 9:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+
+          <form class="bg-white p-6 rounded-lg shadow-sm" id="contact-form" onsubmit="submitForm(event)">
+            <label class="block text-sm">Name</label>
+            <input required name="name" class="mt-1 w-full border rounded-md p-2" />
+
+            <label class="block text-sm mt-3">Email</label>
+            <input required type="email" name="email" class="mt-1 w-full border rounded-md p-2" />
+
+            <label class="block text-sm mt-3">Message</label>
+            <textarea required name="message" class="mt-1 w-full border rounded-md p-2" rows="4"></textarea>
+
+            <div class="mt-4 flex gap-3">
+              <button type="submit" class="px-4 py-2 bg-teal-600 text-white rounded-md">Send Message</button>
+              <button type="button" onclick="window.location='#'" class="px-4 py-2 border rounded-md">Request Quote</button>
+            </div>
+            <p id="form-success" class="text-sm text-green-600 mt-3 hidden">Thanks — we received your message.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-8">
+      <div class="container grid md:grid-cols-3 gap-6">
+        <div>
+          <h4 class="font-semibold">MERA Scanner</h4>
+          <p class="text-sm text-gray-400 mt-2">Secure document scanning & digital archiving.</p>
+        </div>
+        <div>
+          <h5 class="font-medium">Quick links</h5>
+          <ul class="text-sm mt-2 text-gray-400">
+            <li>SCANNING</li>
+            <li>Pricing</li>
+            <li>Contact 7875757140</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-medium">Follow</h5>
+          <p class="text-sm text-gray-400 mt-2">rj infosystem</p>
+        </div>
+      </div>
+      <div class="container text-center text-xs text-gray-500 mt-6">© <span id="year"></span> MERA Scanner — All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script>
+    // Small interactions: mobile menu
+    document.getElementById('mobile-toggle').addEventListener('click', ()=>{
+      const m = document.getElementById('mobile-menu');
+      m.classList.toggle('hidden');
+    });
+
+    // Fake contact submit (for static site). Replace with AJAX or server endpoint for real site.
+    function submitForm(e){
+      e.preventDefault();
+      document.getElementById('form-success').classList.remove('hidden');
+      e.target.reset();
+    }
+
+    // Set current year
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+
+  <!--
+    WordPress Integration Notes (how to convert):
+      - header.php: everything from <header> to before <main>
+      - footer.php: footer section and closing </body></html>
+      - page-home.php (or front-page.php): Put main content (<main> ... </main>) there and use get_header()/get_footer().
+      - Use WP functions for assets: wp_enqueue_script/style in functions.php.
+      - For contact form, use Contact Form 7 or WPForms instead of the static form.
+      - Create a "Services" custom post type if you want editable service cards.
+
+    Plugins recommended (WordPress): Contact Form 7 or WPForms, UpdraftPlus (backup), Yoast or RankMath (SEO), Really Simple SSL (if using https), WP Super Cache or LiteSpeed Cache.
+
+    How to preview locally: save as index.html and open in browser. For WordPress, create a child theme or simple theme files and paste sections into template files.
+  -->
+
+</body>
+</html>
